@@ -1,0 +1,33 @@
+{
+  "timestamp": "2026-10-06T00:42:11.209359+00:00",
+  "metrics": {
+    "total_records": 5,
+    "columns": [
+      "nombre",
+      "edad",
+      "ciudad",
+      "salario"
+    ],
+    "column_count": 4,
+    "sample": [
+      {
+        "nombre": "Juan",
+        "edad": "28",
+        "ciudad": "CDMX",
+        "salario": "50000"
+      },
+      {
+        "nombre": "María",
+        "edad": "32",
+        "ciudad": "Guadalajara",
+        "salario": "65000"
+      },
+      {
+        "nombre": "Carlos",
+        "edad": "25",
+        "ciudad": "Monterrey",
+        "salario": "45000"
+      }
+    ]
+  }
+}

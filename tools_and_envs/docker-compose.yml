@@ -1,0 +1,8 @@
+
+services:
+  smocker:
+    image: thiht/smocker:latest
+    ports:
+      - "9080:8080"  # API simulada
+      - "9081:8081"  # Admin UI
+    restart: unless-stopped
