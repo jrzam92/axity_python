@@ -4,7 +4,11 @@ version = "0.1.0"
 description = "Laboratorio Python: HTTP, FastAPI, SQLAlchemy"
 authors = ["JoseRaulZamora <jose.zamorav@axity.com>"]
 readme = "README.md"
-packages = [{include = "modulo_http_apis", from = "src"}, {include = "modulo_fastapi", from = "src"}]
+packages = [
+    {include = "modulo_http_apis", from = "src"},
+    {include = "modulo_fastapi", from = "src"},
+    {include = "modulo_concurrencia", from = "src"}  # 👈 Agregar esta línea
+]
 
 [tool.poetry.dependencies]
 python = "^3.12"
@@ -31,6 +35,12 @@ python-dotenv = "^1.0.0"
 pyyaml = "^6.0"
 bcrypt = "4.2.1"
 passlib = {version = "^1.7.4", extras = ["bcrypt"]}
+aiofiles = "^25.1.0"
+pandas = "^3.0.6"
+numpy = "^2.5.3"
+polars = "^2.0.0"
+scikit-learn = "^1.9.1"
+joblib = "^1.6.0"
 
 [tool.poetry.group.dev.dependencies]
 pytest = "^7.4.0"
@@ -38,6 +48,7 @@ pytest-asyncio = "^0.21.0"
 mypy = "^1.8.0"
 pytest-cov = "^7.1.0"
 hypothesis = "^6.168.5"
+pytest-mock = "^3.16.0"
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]
